@@ -19,6 +19,9 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        manrope: ["Manrope", 'serif']
                     }
                 }
             }
@@ -26,7 +29,7 @@
     </script>
 </head>
 
-<body>
+<body class="font-manrope">
     <header class="px-5">
         <div class="grid md:grid-cols-2  justify-between  items-center md:max-w-screen-lg mx-auto mt-6 mb-6  ">
             <!-- header text section  -->
@@ -314,8 +317,18 @@
                 </div>
                 <!-- card-4  -->
                 <div>
-                    <h1 class="text-xl font-bold text-[#1C1C1C] mb-2">Subscribe to our <br> newsletter</h1>
-                    <input type="text">
+                    <h1 class=" md:text-xl font-bold text-[#1C1C1C] mb-2">Subscribe to our <br> newsletter</h1>
+
+                    <!-- input section  -->
+                    <div class="flex items-center ">
+                        <input type="text" placeholder="Email Address"
+                            class="bg-transparent border-b-2 border-black py-4  w-4/6 ">
+
+                        <i
+                            class="fa-solid fa-chevron-right bg-orange-600 h-8 w-8 rounded-full flex text-white justify-center items-center"></i>
+
+                    </div>
+                    <!-- icon  -->
                     <div class="flex gap-5 my-6">
                         <i class="fa-brands fa-facebook-f"></i>
                         <i class="fa-brands fa-twitter"></i>
@@ -326,7 +339,8 @@
             </div>
 
             <div>
-                <h1 class="text-sm font-medium text-center pb-12 text-[#494949]">© 2027 UIDesign.to - All rights reserved.</h1>
+                <h1 class="text-sm font-medium text-center pb-12 text-[#494949]">© 2027 UIDesign.to - All rights
+                    reserved.</h1>
             </div>
 
         </section>
